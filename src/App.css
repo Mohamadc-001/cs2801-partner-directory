@@ -160,3 +160,31 @@
   font-size: 14px;
   line-height: 1.7;
 }
+@media (max-width: 600px) {
+  .directory {
+    padding: 24px 16px;
+  }
+
+  .directory-header h1 {
+    font-size: 28px;
+  }
+
+  .directory-header p {
+    font-size: 14px;
+  }
+
+  .directory-filters {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .directory-filters input,
+  .directory-filters select,
+  .clear-filters {
+    width: 100%;
+  }
+
+  .directory-results h2 {
+    font-size: 24px;
+  }
+}
