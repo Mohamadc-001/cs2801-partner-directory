@@ -1,17 +1,22 @@
 function BusinessCard({ business }) {
   return (
     <article className="business-card">
+      <div className="business-card-header">
+        <span className="industry-badge">
+          {business.industry}
+        </span>
+      </div>
+
       <h3>{business.name}</h3>
 
-      <p>
-        <strong>Industry:</strong> {business.industry}
+      <p className="business-location">
+        <span aria-hidden="true">📍</span>
+        {business.location}
       </p>
 
-      <p>
-        <strong>Location:</strong> {business.location}
+      <p className="business-description">
+        {business.description}
       </p>
-
-      <p>{business.description}</p>
     </article>
   );
 }

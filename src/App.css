@@ -112,3 +112,51 @@
   outline: 3px solid #60a5fa;
   outline-offset: 2px;
 }
+
+/* Improved business cards */
+
+.business-card {
+  background: #ffffff;
+  padding: 26px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.business-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.business-card-header {
+  margin-bottom: 18px;
+}
+
+.industry-badge {
+  display: inline-block;
+  background: #e0ecff;
+  color: #1d4ed8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.business-card h3 {
+  color: #172b4d;
+  font-size: 21px;
+  margin-bottom: 16px;
+}
+
+.business-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.business-description {
+  font-size: 14px;
+  line-height: 1.7;
+}
