@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import BusinessCard from './BusinessCard';
+import './PartnerDirectory.css';
 
 const businesses = [
   {
@@ -26,7 +27,7 @@ const businesses = [
   },
 ];
 
-function PartnerDirectory() {
+function PartnerDirectory({ businesses: providedBusinesses }) {
   const [search, setSearch] = useState('');
   const [industry, setIndustry] = useState('');
   const [location, setLocation] = useState('');
@@ -37,7 +38,9 @@ function PartnerDirectory() {
     setLocation('');
   }
 
-  const filteredBusinesses = businesses.filter((business) => {
+  const directoryBusinesses = providedBusinesses ?? businesses;
+
+const filteredBusinesses = directoryBusinesses.filter((business) => {
     const matchesSearch = business.name
       .toLowerCase()
       .includes(search.trim().toLowerCase());

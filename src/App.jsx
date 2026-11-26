@@ -1,5 +1,4 @@
 
-import './App.css';
 import PartnerDirectory from './components/PartnerDirectory';
 
 function App() {
