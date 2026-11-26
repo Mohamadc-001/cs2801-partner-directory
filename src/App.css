@@ -93,3 +93,22 @@
     grid-template-columns: 1fr;
   }
 }
+.clear-filters {
+  padding: 14px 20px;
+  background-color: #172b4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.clear-filters:hover {
+  background-color: #29476f;
+}
+
+.clear-filters:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 2px;
+}

@@ -31,7 +31,11 @@ function App() {
   const [search, setSearch] = useState('');
   const [industry, setIndustry] = useState('');
   const [location, setLocation] = useState('');
-
+function clearFilters() {
+  setSearch('');
+  setIndustry('');
+  setLocation('');
+}
   const filteredBusinesses = businesses.filter((business) => {
     const matchesSearch = business.name
       .toLowerCase()
@@ -86,6 +90,13 @@ function App() {
           <option value="Manchester">Manchester</option>
           <option value="Birmingham">Birmingham</option>
         </select>
+        <button
+  type="button"
+  className="clear-filters"
+  onClick={clearFilters}
+>
+  Clear Filters
+</button>
       </section>
 
       <section className="directory-results">
